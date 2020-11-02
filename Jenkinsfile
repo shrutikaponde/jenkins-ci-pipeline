@@ -20,7 +20,7 @@ pipeline {
 
       }
       steps {
-        sh 'python test_app.py'
+        sh '. .venv/bin/activate && python test_app.py'
       }
     }
 
